@@ -1,5 +1,7 @@
-year = int(input("Enter the year: "))
-if year%100 == 0 and year%400 == 0 or year%100 != 0 and year%4 == 0:
-    print(year, "is a leap year")
+def reverseDigit(n):
+    return n[::-1]
+n = int(input("Enter a numeber: "))
+if n == int(reverseDigit(str(n))):
+    print(n,"is a palindrome")
 else:
-    print(year, "is not a leap lear")
+    print(n,"is not a palindrome")

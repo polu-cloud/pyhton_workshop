@@ -1,9 +1,11 @@
-num = int(input("Number of calls: "))
-sum = 200
-if num > 100 :
-    sum = sum + (num-100)*0.6
-if num > 150 :
-    sum = sum + (num-150)*0.5
-if num > 200:
-    sum = sum + (num-200)*0.4
-print("The cost for", num, "calls is:", sum)
+def fibo(n):
+    a,b=0,1
+    for i in range(n):
+        print(a, end=' ')
+        c = a+b
+        a = b
+        b = c
+        
+n = int(input("Enter the number of Fibonacci numbers: "))
+print("Fibonacci numbers upto", n, "terms")
+fibo(n)

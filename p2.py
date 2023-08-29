@@ -1,3 +1,4 @@
-num = int(input("Enter a number: "))
-days = {1: "Sunday", 2:" Monday", 3: "Tuesday", 4: "Wednesday", 5: "Thursday", 6: "Friday", 7: "Saturday"}
-print("The corresponding week day is:", days[num])
+a,b = map(int, input("Ente The range: ").split())
+for i in range(a,b+1):
+    if i%3 == 0:
+        print(i, end = ' ')

@@ -1,2 +1,5 @@
-a,b,c = map(int, input("Enter 3 numbers: ").split())
-print("The maximum of tree numbers are: ", max(a,b,c))
+a,b = map(int, input("Enter base and power: ").split())
+pow= 1
+for i in range(0,b):
+    pow = pow*a;
+print("The power of ", a, "^", b, " = ", pow, sep = '')
